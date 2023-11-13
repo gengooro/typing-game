@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+#heading {
+  width: 100%;
+  text-align: center;
+  font-size: xx-large;
+  font-family: Arial, Helvetica, sans-serif;
+  animation: colors infinite 4.2s;
+  transition: text ease 1s;
+}
+
+.box {
+  width: 25%;
+}
+
+#output {
+  background-color: white;
+  height: 75%;
+  min-height: 50%;
+}
+
+@keyframes colors {
+  0% {color: red;}
+  25% {color: green;}
+  50% {color: blue;}
+  75% {color: yellow;}
+  100% {color: burlywood;}
+}
+
+@media only screen and (width < 1250px) {
+  .box {
+      width: 50%;
+  }   
+}
+
+@media screen and (width < 1250px) {
+  .box {
+    width: 50%;
+  }
+}
+
+@media screen and (height < 650px) {
+  #box {
+    height: 75%;
+  }
+}
