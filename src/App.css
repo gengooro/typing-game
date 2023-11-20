@@ -20,7 +20,7 @@
 #output {
   background-color: white;
   height: 75%;
-  min-height: 50%;
+  min-height: 75%;
 }
 
 @keyframes colors {
@@ -29,6 +29,35 @@
   50% {color: blue;}
   75% {color: yellow;}
   100% {color: burlywood;}
+}
+
+.input::placeholder {
+  color: white;
+  opacity: 1;
+}
+
+.credits {
+  position: relative;
+  font-weight: 900;
+  font-family: monospace;
+  cursor:text;
+}
+
+.credits::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  margin-top: 3px;
+  bottom: 0;
+  height: 3px;
+  width: 0%;
+  background-color: white;
+  color: white;
+  transition: all ease 1s;
+}
+
+.credits:hover::after{
+  width: 100%;
 }
 
 @media only screen and (width < 1250px) {

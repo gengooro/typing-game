@@ -12,10 +12,14 @@ const App = () => {
         <h3 id="heading">Type your color</h3>
         <div id="output" className="output w-100"></div>
         <input
+          placeholder="cyan"
           type="text"
           onInput={(e) => handleColor(e.target.value)}
-          className="form-control bg-transparent text-white"
+          className="input form-control bg-transparent text-white"
         />
+        <h3 className="credits">
+          Made by <span className="text-primary ">{"<Shoaib />"}</span>
+        </h3>
       </div>
     </div>
   );
